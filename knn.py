@@ -1,5 +1,5 @@
 __author__ = "Amir Mallaei"
-__email__ = "amirmallaei@gmail.com
+__email__ = "amirmallaei@gmail.com"
 
 import cv2
 from PIL import Image
@@ -11,13 +11,13 @@ from Myfuncs import my_mean
 
 
 # Read the Original Image
-img = np.array(Image.open('1.jpg'))
+img = np.array(Image.open('Images/1.jpg'))
 size_img = img.shape
 
 # Read the Masks
-water = np.array(Image.open('water.jpg'))
-green = np.array(Image.open('green.jpg'))
-urban = np.array(Image.open('urban.jpg'))
+water = np.array(Image.open('Images/water.jpg'))
+green = np.array(Image.open('Images/green.jpg'))
+urban = np.array(Image.open('Images/urban.jpg'))
 
 # Define Classes
 classes = ['water', 'green', 'urban']
